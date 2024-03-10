@@ -31,9 +31,6 @@ body{
     width: 241px;
     height: 425px;
     transform: translate(-50%, -50%);
-    background-image: url('imagens/tela-home.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 .nav{
     display: flex;
@@ -50,10 +47,11 @@ body{
     width: 48px;
     border-radius: 50%;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.486);
-    transition: .5s;
+    box-sizing: border-box;
 }
 .nav img:hover{
     border: 2px solid white;
-    margin-bottom: 8px;
-    margin-right: 5px;
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.486); 
+    transition: transform .3s, border 1s; 
 }
